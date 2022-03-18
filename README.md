@@ -1,1 +1,1 @@
-# BHMS-CSharp
+Bachelor's Housing Management System [ C# ]
