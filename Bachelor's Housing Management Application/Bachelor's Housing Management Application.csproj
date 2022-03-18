@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37C227C3-F7C4-4901-BA10-4E84E93E7545}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bachelor_s_Housing_Management_Application</RootNamespace>
+    <AssemblyName>Bachelor%27s Housing Management Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business Logic Layer\AdService.cs" />
+    <Compile Include="Business Logic Layer\Session.cs" />
+    <Compile Include="Business Logic Layer\UserService.cs" />
+    <Compile Include="Data Access Layer\ADData.cs" />
+    <Compile Include="Data Access Layer\ADDataAccess.cs" />
+    <Compile Include="Data Access Layer\BData.cs" />
+    <Compile Include="Data Access Layer\BDataAccess.cs" />
+    <Compile Include="Data Access Layer\DataAccess.cs" />
+    <Compile Include="Data Access Layer\FOData.cs" />
+    <Compile Include="Data Access Layer\FODataAccess.cs" />
+    <Compile Include="Presentation Layer\ADDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ADDisplay.Designer.cs">
+      <DependentUpon>ADDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\BHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\BHomePage.Designer.cs">
+      <DependentUpon>BHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Booked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\Booked.Designer.cs">
+      <DependentUpon>Booked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\BSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\BSettings.Designer.cs">
+      <DependentUpon>BSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\BSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\BSignUp.Designer.cs">
+      <DependentUpon>BSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\CashIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\CashIn.Designer.cs">
+      <DependentUpon>CashIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\CashOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\CashOut.Designer.cs">
+      <DependentUpon>CashOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FOHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FOHomePage.Designer.cs">
+      <DependentUpon>FOHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FOLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FOLogin.Designer.cs">
+      <DependentUpon>FOLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\BLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\BLogin.Designer.cs">
+      <DependentUpon>BLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FOSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FOSettings.Designer.cs">
+      <DependentUpon>FOSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\FOSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FOSignUp.Designer.cs">
+      <DependentUpon>FOSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\PostAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\PostAD.Designer.cs">
+      <DependentUpon>PostAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\ShowAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ShowAD.Designer.cs">
+      <DependentUpon>ShowAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\ADDisplay.resx">
+      <DependentUpon>ADDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\BHomePage.resx">
+      <DependentUpon>BHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\Booked.resx">
+      <DependentUpon>Booked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\BSettings.resx">
+      <DependentUpon>BSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\BSignUp.resx">
+      <DependentUpon>BSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\CashIn.resx">
+      <DependentUpon>CashIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\CashOut.resx">
+      <DependentUpon>CashOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FOHomePage.resx">
+      <DependentUpon>FOHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FOLogin.resx">
+      <DependentUpon>FOLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\BLogin.resx">
+      <DependentUpon>BLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FOSettings.resx">
+      <DependentUpon>FOSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FOSignUp.resx">
+      <DependentUpon>FOSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\PostAD.resx">
+      <DependentUpon>PostAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\ShowAD.resx">
+      <DependentUpon>ShowAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG 20.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
